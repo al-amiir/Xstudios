@@ -1,0 +1,12 @@
+.aboutUs {
+  color: wheat;
+  &_text {
+    position: absolute;
+    top: 0;
+  }
+}
+iframe {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
