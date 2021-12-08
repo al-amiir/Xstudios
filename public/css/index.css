@@ -15,6 +15,7 @@ body {
   background-color: black;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -156,12 +157,19 @@ $breakpoint arguement choices:
   color: wheat;
 }
 .aboutUs_text {
+  display: none;
   position: absolute;
   top: 0;
 }
 .aboutUs_text-header {
   font-size: 5rem;
   margin-left: 10px;
+}
+@supports (-webkit-text-stroke: 1px wheat) {
+  .aboutUs_text-header {
+    -webkit-text-stroke: 2.5px #ffa600;
+    -webkit-text-fill-color: black;
+  }
 }
 .aboutUs_text-header-line {
   width: 100%;

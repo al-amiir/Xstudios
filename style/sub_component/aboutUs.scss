@@ -2,9 +2,16 @@
   position: relative;
   color: wheat;
   &_text {
+    display: none;
     position: absolute;
     top: 0;
     &-header {
+      @supports (-webkit-text-stroke: 1px wheat) {
+        & {
+          -webkit-text-stroke: 2.5px #ffa600;
+          -webkit-text-fill-color: black;
+        }
+      }
       font-size: 5rem;
       margin-left: 10px;
       &-line {
