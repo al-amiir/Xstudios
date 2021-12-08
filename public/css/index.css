@@ -152,11 +152,33 @@ $breakpoint arguement choices:
 }
 
 .aboutUs {
+  position: relative;
   color: wheat;
 }
 .aboutUs_text {
   position: absolute;
   top: 0;
+}
+.aboutUs_text-header {
+  font-size: 5rem;
+  margin-left: 10px;
+}
+.aboutUs_text-header-line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: wheat;
+}
+.aboutUs_text-1-words {
+  width: 506px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.aboutUs_text-1-words-singleWord {
+  font-size: 1rem;
+  margin: 5px;
 }
 
 iframe {

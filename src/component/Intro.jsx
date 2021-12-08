@@ -78,9 +78,9 @@ const Intro = () => {
   return (
     <div className="intro">
       <div className="video">
-        <video autoPlay muted>
+        {/* <video autoPlay muted>
           <source src={ink} type="video/mp4" />
-        </video>
+        </video> */}
       </div>
       <div className="intro_first">
         <span className="dot"></span>
