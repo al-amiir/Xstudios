@@ -112,35 +112,6 @@ $breakpoint arguement choices:
   transform: translateY(40px);
   margin: 0px 5px;
 }
-.intro_button {
-  position: fixed;
-  z-index: 1;
-  cursor: pointer;
-  bottom: 10px;
-  left: 50%;
-  border: none;
-  background-color: transparent;
-  backdrop-filter: blur(8px);
-}
-.intro_button-cover {
-  width: 10px;
-  height: 10px;
-  border: 1px dashed #ffa600;
-  background-color: transparent;
-  padding: 20px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-}
-.intro_button-line {
-  width: 3px;
-  height: 3px;
-  border-radius: 10px;
-  border: 1px solid #ffa600;
-  padding: 3px;
-  background-color: #ffa600;
-}
 .intro iframe {
   position: absolute;
   width: 100%;
@@ -162,10 +133,10 @@ $breakpoint arguement choices:
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: #0000009c;
+  background-color: #000000;
   backdrop-filter: blur(5px);
 }
-.menu_button {
+.menu_link {
   position: relative;
   background-color: transparent;
   overflow: hidden;
@@ -173,28 +144,59 @@ $breakpoint arguement choices:
   border: none;
   margin-left: 30px;
 }
-.menu_button span {
+.menu_link span {
   margin-right: 17px;
   font-size: 5rem;
   color: #ffa600;
   font-family: "Genos", sans-serif;
   transform: translateY(70px);
 }
-.menu_button-line {
+.menu_link-line {
   width: 0%;
   height: 1px;
   position: absolute;
   background-color: red;
 }
-.menu_button-close {
+.menu_link-close {
   cursor: pointer;
   font-family: "Genos", sans-serif;
   position: fixed;
-  bottom: -9px;
-  right: 47vw;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
   color: red;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3rem;
+}
+.menu_button {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+.menu_button-cover {
+  width: 10px;
+  height: 10px;
+  border: 1px dashed #ffa600;
+  background-color: transparent;
+  padding: 20px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.menu_button-line {
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  border: 1px solid #ffa600;
+  padding: 3px;
+  background-color: #ffa600;
 }
 
 .activeLink span {
@@ -205,18 +207,13 @@ $breakpoint arguement choices:
   color: wheat;
 }
 .aboutUs_text {
-  display: none;
   top: 0;
 }
 .aboutUs_text-header {
+  color: red;
+  font-weight: 600;
   font-size: 5rem;
   margin-left: 10px;
-}
-@supports (-webkit-text-stroke: 1px wheat) {
-  .aboutUs_text-header {
-    -webkit-text-stroke: 2.5px #ffa600;
-    -webkit-text-fill-color: black;
-  }
 }
 .aboutUs_text-header-line {
   width: 100%;
@@ -234,7 +231,7 @@ $breakpoint arguement choices:
 .aboutUs_text-1-words-singleWord {
   font-size: 3rem;
   margin: 5px;
-  color: red;
+  color: #ffa600;
   font-weight: 600;
 }
 
@@ -280,8 +277,7 @@ iframe {
   height: 100vh;
   background-color: black;
   z-index: 1;
-  top: 0vh;
-  opacity: 0;
+  top: 100vh;
 }
 .loading span {
   width: 10vw;
@@ -289,7 +285,7 @@ iframe {
   background-color: #bf0000;
   position: fixed;
   top: 100vh;
-  z-index: 1;
+  z-index: 3;
   border: 1px solid black;
 }
 

@@ -35,8 +35,7 @@ export function animateLine(className, direction) {
 export function animateLoadingBackground(direction) {
   anime({
     targets: ".loading_background",
-    // translateY: ["0vh", "-100vh"],
-    opacity: [0, 1],
+    translateY: ["0vh", "-100vh"],
     direction: `${direction}`,
     easing: "linear",
     duration: 100,
@@ -53,4 +52,3 @@ export function animateLoading(className, direction) {
     direction: `${direction}`,
   });
 }
-// .transition span

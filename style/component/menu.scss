@@ -4,9 +4,9 @@
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background-color: #0000009c;
+  background-color: #000000;
   backdrop-filter: blur(5px);
-  &_button {
+  &_link {
     position: relative;
     background-color: transparent;
     overflow: hidden;
@@ -30,11 +30,42 @@
       cursor: pointer;
       font-family: "Genos", sans-serif;
       position: fixed;
-      bottom: -9px;
-      right: 47vw;
+      bottom: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
       color: red;
-      font-size: 4rem;
-      font-weight: 800;
+      font-size: 3rem;
+    }
+  }
+  &_button {
+    position: fixed;
+    z-index: 1;
+    cursor: pointer;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    &-cover {
+      width: 10px;
+      height: 10px;
+      border: 1px dashed #ffa600;
+      background-color: transparent;
+      padding: 20px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+    }
+    &-line {
+      width: 3px;
+      height: 3px;
+      border-radius: 10px;
+      border: 1px solid #ffa600;
+      padding: 3px;
+      background-color: #ffa600;
     }
   }
 }

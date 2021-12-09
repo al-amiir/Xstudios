@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import anime from "animejs/lib/anime.es.js";
 import { animateLoading, animateLoadingBackground } from "../globalFunctions/globalAnimation";
 const AboutUs = () => {
   let text1 = "Ostudios, is a Creative Advertising agency located in Egypt.";
+  let text2 = "Through continuous improvement of our knowledge and skills, we maintain our reputation of delivering exceptional software products and services.";
+  let text3 = "To be the center of excellence for the Software Industry in the MENA region. We build the most innovative software solutions out of the region.";
   let condition = true;
 
   useEffect(() => {
@@ -42,23 +43,44 @@ const AboutUs = () => {
   useEffect(() => {
     return () => {
       animateLoadingBackground("normal");
-      animateLoading(".loading span", "normal");
       setTimeout(() => {
-        animateLoadingBackground("reverse");
-        animateLoading(".loading span", "reverse");
+        animateLoading(".loading span", "normal");
+        setTimeout(() => {
+          animateLoadingBackground("reverse");
+          animateLoading(".loading span", "reverse");
+        }, 1000);
       }, 1000);
     };
   }, []);
 
   return (
     <div>
-      {/* <iframe src="https://my.spline.design/pos-8dd5b15f728c93a425f5bbb7cddb7953/" frameborder="0" width="100%" height="100%"></iframe> */}
       <section className="aboutUs">
         <div className="aboutUs_text">
           <p className="aboutUs_text-header">about us</p>
           <span className="aboutUs_text-header-line"></span>
           <p className="aboutUs_text-1-words">
             {text1.split(" ").map((w) => (
+              <span className="aboutUs_text-1-words-singleWord">{w}</span>
+            ))}
+          </p>
+        </div>
+
+        <div className="aboutUs_text">
+          <p className="aboutUs_text-header">our mission</p>
+          <span className="aboutUs_text-header-line"></span>
+          <p className="aboutUs_text-1-words">
+            {text2.split(" ").map((w) => (
+              <span className="aboutUs_text-1-words-singleWord">{w}</span>
+            ))}
+          </p>
+        </div>
+
+        <div className="aboutUs_text">
+          <p className="aboutUs_text-header">our vission</p>
+          <span className="aboutUs_text-header-line"></span>
+          <p className="aboutUs_text-1-words">
+            {text3.split(" ").map((w) => (
               <span className="aboutUs_text-1-words-singleWord">{w}</span>
             ))}
           </p>

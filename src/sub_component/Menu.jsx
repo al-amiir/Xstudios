@@ -11,63 +11,63 @@ const Menu = () => {
   let word6 = "Contact us";
 
   function handleCloseButton() {
-    animateWord(".menu_button-word-1", "reverse");
-    animateWord(".menu_button-word-2", "reverse");
-    animateWord(".menu_button-word-3", "reverse");
-    animateWord(".menu_button-word-4", "reverse");
-    animateWord(".menu_button-word-5", "reverse");
-    animateWord(".menu_button-word-6", "reverse");
-    animateLine(".menu_button-line", "reverse");
+    animateWord(".menu_link-word-1", "reverse");
+    animateWord(".menu_link-word-2", "reverse");
+    animateWord(".menu_link-word-3", "reverse");
+    animateWord(".menu_link-word-4", "reverse");
+    animateWord(".menu_link-word-5", "reverse");
+    animateWord(".menu_link-word-6", "reverse");
+    animateLine(".menu_link-line", "reverse");
     setTimeout(() => {
       animateMenu(".menu", "reverse");
     }, 1000);
   }
   return (
     <div className="menu">
-      <NavLink onClick={handleCloseButton} to="/" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word1.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-1">{w}</span>
+          <span className="menu_link-word menu_link-word-1">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <NavLink onClick={handleCloseButton} to="/about-us" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/about-us" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word2.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-2">{w}</span>
+          <span className="menu_link-word menu_link-word-2">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <NavLink onClick={handleCloseButton} to="/services" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/services" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word3.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-3">{w}</span>
+          <span className="menu_link-word menu_link-word-3">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <NavLink onClick={handleCloseButton} to="/projects" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/projects" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word4.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-4">{w}</span>
+          <span className="menu_link-word menu_link-word-4">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <NavLink onClick={handleCloseButton} to="/partners" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/partners" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word5.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-5">{w}</span>
+          <span className="menu_link-word menu_link-word-5">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <NavLink onClick={handleCloseButton} to="/contact-us" className={({ isActive }) => (isActive ? " menu_button activeLink" : "menu_button")}>
+      <NavLink onClick={handleCloseButton} to="/contact-us" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
         {word6.split("").map((w) => (
-          <span className="menu_button-word menu_button-word-6">{w}</span>
+          <span className="menu_link-word menu_link-word-6">{w}</span>
         ))}
       </NavLink>
-      <span className="menu_button-line"></span>
+      <span className="menu_link-line"></span>
 
-      <button onClick={handleCloseButton} className="menu_button menu_button-close">
-        X
+      <button onClick={handleCloseButton} className="menu_link menu_link-close">
+        <i class="far fa-times-circle"></i>
       </button>
     </div>
   );

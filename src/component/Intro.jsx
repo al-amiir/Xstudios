@@ -74,10 +74,12 @@ const Intro = () => {
   useEffect(() => {
     return () => {
       animateLoadingBackground("normal");
-      animateLoading(".loading span", "normal");
       setTimeout(() => {
-        animateLoadingBackground("reverse");
-        animateLoading(".loading span", "reverse");
+        animateLoading(".loading span", "normal");
+        setTimeout(() => {
+          animateLoadingBackground("reverse");
+          animateLoading(".loading span", "reverse");
+        }, 1000);
       }, 1000);
     };
   }, []);

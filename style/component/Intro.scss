@@ -61,36 +61,7 @@
       margin: 0px 5px;
     }
   }
-  &_button {
-    position: fixed;
-    z-index: 1;
-    cursor: pointer;
-    // position: absolute;
-    bottom: 10px;
-    left: 50%;
-    border: none;
-    background-color: transparent;
-    backdrop-filter: blur(8px);
-    &-cover {
-      width: 10px;
-      height: 10px;
-      border: 1px dashed #ffa600;
-      background-color: transparent;
-      padding: 20px 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 6px;
-    }
-    &-line {
-      width: 3px;
-      height: 3px;
-      border-radius: 10px;
-      border: 1px solid #ffa600;
-      padding: 3px;
-      background-color: #ffa600;
-    }
-  }
+
   iframe {
     position: absolute;
     width: 100%;
