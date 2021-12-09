@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap");
+body {
+  font-family: "Genos", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.intro {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.intro .video {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.intro .video video {
+  width: 100vw;
+  height: 100vh;
+  filter: contrast(1.2) saturate(1.3);
+  transform: scale(1.3);
+}
+.intro_first {
+  position: fixed;
+  color: red;
+  top: -28px;
+  left: -43px;
+  background-color: transparent;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.intro_second {
+  position: fixed;
+  background-color: transparent;
+  color: red;
+  top: 52px;
+  left: 81px;
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.intro_third {
+  color: #ffa600;
+  position: fixed;
+  top: 57vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.intro_third .word-3 {
+  transform: translateY(40px);
+  margin: 0px 5px;
+}
+.intro iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutUs {
+  color: wheat;
+}
+.aboutUs_text-header {
+  color: red;
+  font-weight: 600;
+  font-size: 5rem;
+  margin-left: 10px;
+}
+.aboutUs_text-header-line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: wheat;
+}
+.aboutUs_text-1-words {
+  width: 774px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  overflow: hidden;
+}
+.aboutUs_text-1-words-singleWord {
+  font-size: 3rem;
+  margin: 5px;
+  color: #ffa600;
+  font-weight: 600;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+.services_text-header {
+  margin-left: 10px;
+}
+@supports (-webkit-text-stroke: 1px wheat) {
+  .services_text-header {
+    -webkit-text-stroke: 2.5px red;
+    -webkit-text-fill-color: black;
+    font-size: 5rem;
+  }
+}
+.services_text-header-line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: wheat;
+}
+.services_text-words {
+  margin-left: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.services_text-words-singleWord {
+  color: #ffa600;
+  font-size: 3rem;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+
+.menu {
+  position: fixed;
+  top: 100vw;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  backdrop-filter: blur(5px);
+}
+.menu_link {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  border: none;
+  margin-left: 30px;
+}
+.menu_link span {
+  margin-right: 17px;
+  font-size: 5rem;
+  color: #ffa600;
+  font-family: "Genos", sans-serif;
+  transform: translateY(70px);
+}
+.menu_link-line {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  background-color: red;
+}
+.menu_link-close {
+  cursor: pointer;
+  font-family: "Genos", sans-serif;
+  position: fixed;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: red;
+  font-size: 3rem;
+}
+.menu_button {
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+}
+.menu_button-cover {
+  width: 10px;
+  height: 10px;
+  border: 1px dashed #ffa600;
+  background-color: transparent;
+  padding: 20px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.menu_button-line {
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  border: 1px solid #ffa600;
+  padding: 3px;
+  background-color: #ffa600;
+}
+
+.activeLink span {
+  color: red;
+}
+
+.loading_background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1;
+  top: 100vh;
+}
+.loading span {
+  width: 10vw;
+  height: 130vh;
+  background-color: #bf0000;
+  position: fixed;
+  top: 100vh;
+  z-index: 3;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=index.css.map */
