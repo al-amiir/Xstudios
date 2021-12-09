@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 
 const AboutUs = () => {
-  let text1 = "Ostudios, is a Creative Advertising agency located in Egypt. It presents variations of advertising solutions.";
+  let text1 = "Ostudios, is a Creative Advertising agency located in Egypt.";
   let condition = true;
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,7 +23,7 @@ const AboutUs = () => {
         });
         anime({
           targets: ".aboutUs_text-1-words-singleWord",
-          translateY: [-60, 0],
+          translateY: [-120, 0],
           duration: 1000,
           easing: "easeOutQuad",
 

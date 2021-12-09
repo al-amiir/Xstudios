@@ -23,7 +23,7 @@
     top: -28px;
     left: -43px;
     background-color: transparent;
-    font-size: 7rem;
+    font-size: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
     color: red;
     top: 52px;
     left: 81px;
-    font-size: 7rem;
+    font-size: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,15 +46,18 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%);
   }
   &_third {
-    color: wheat;
+    color: #ffa600;
     position: fixed;
     top: 57vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 12px;
     .word-3 {
-      transform: translateY(20px);
+      transform: translateY(40px);
       margin: 0px 5px;
     }
   }

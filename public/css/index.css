@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap");
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Genos", sans-serif;
 }
 
 *,
@@ -73,7 +74,7 @@ $breakpoint arguement choices:
   top: -28px;
   left: -43px;
   background-color: transparent;
-  font-size: 7rem;
+  font-size: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +88,7 @@ $breakpoint arguement choices:
   color: red;
   top: 52px;
   left: 81px;
-  font-size: 7rem;
+  font-size: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,16 +97,19 @@ $breakpoint arguement choices:
   clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 .intro_third {
-  color: wheat;
+  color: #ffa600;
   position: fixed;
   top: 57vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 12px;
 }
 .intro_third .word-3 {
-  transform: translateY(20px);
+  transform: translateY(40px);
   margin: 0px 5px;
 }
 .intro_button {
@@ -147,18 +151,56 @@ $breakpoint arguement choices:
   background-color: #0000008a;
   backdrop-filter: blur(9px);
   width: 100vw;
-  height: 200vh;
   top: 0px;
   z-index: 20;
 }
 
-.aboutUs {
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000009c;
+  position: fixed;
+  top: 100vw;
+  backdrop-filter: blur(5px);
+}
+.menu_button {
   position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  color: wheat;
+  display: flex;
+  border: none;
+  margin-left: 30px;
+}
+.menu_button p {
+  margin-right: 17px;
+  font-size: 5rem;
+  color: #ffa600;
+  font-family: "Genos", sans-serif;
+  transform: translateY(70px);
+}
+.menu_button-line {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  background-color: red;
+}
+.menu_button-close {
+  cursor: pointer;
+  font-family: "Genos", sans-serif;
+  position: fixed;
+  bottom: -9px;
+  right: 47vw;
+  color: red;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.aboutUs {
   color: wheat;
 }
 .aboutUs_text {
   display: none;
-  position: absolute;
   top: 0;
 }
 .aboutUs_text-header {
@@ -178,21 +220,53 @@ $breakpoint arguement choices:
   background-color: wheat;
 }
 .aboutUs_text-1-words {
-  width: 506px;
+  width: 774px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
+  margin-left: 50px;
   overflow: hidden;
 }
 .aboutUs_text-1-words-singleWord {
-  font-size: 1rem;
+  font-size: 3rem;
   margin: 5px;
+  color: red;
+  font-weight: 600;
 }
 
 iframe {
-  position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+.services_text {
+  visibility: hidden;
+}
+.services_text-header {
+  margin-left: 10px;
+}
+@supports (-webkit-text-stroke: 1px wheat) {
+  .services_text-header {
+    -webkit-text-stroke: 2.5px #ffa600;
+    -webkit-text-fill-color: black;
+    font-size: 5rem;
+  }
+}
+.services_text-header-line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: wheat;
+}
+.services_text-words {
+  margin-left: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.services_text-words-singleWord {
+  color: red;
+  font-size: 3rem;
+  margin: 10px 0px;
 }
 
 /*# sourceMappingURL=index.css.map */

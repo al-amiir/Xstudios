@@ -1,0 +1,40 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000009c;
+  position: fixed;
+  top: 100vw;
+  backdrop-filter: blur(5px);
+  &_button {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    color: wheat;
+    display: flex;
+    border: none;
+    margin-left: 30px;
+    p {
+      margin-right: 17px;
+      font-size: 5rem;
+      color: #ffa600;
+      font-family: "Genos", sans-serif;
+      transform: translateY(70px);
+    }
+    &-line {
+      width: 0%;
+      height: 1px;
+      position: absolute;
+      background-color: red;
+    }
+    &-close {
+      cursor: pointer;
+      font-family: "Genos", sans-serif;
+      position: fixed;
+      bottom: -9px;
+      right: 47vw;
+      color: red;
+      font-size: 4rem;
+      font-weight: 800;
+    }
+  }
+}
