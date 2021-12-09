@@ -31,3 +31,16 @@ export function animateLine(className, direction) {
     direction: `${direction}`,
   });
 }
+
+export function animateTransition(className, direction) {
+  anime({
+    targets: `${className}`,
+    translateY: ["0vh", "-100vh"],
+    delay: function (el, i, l) {
+      return i * 100;
+    },
+    // easing: "easeOutQuad",
+    direction: `${direction}`,
+  });
+}
+// .transition span

@@ -274,4 +274,14 @@ iframe {
   margin: 10px 0px;
 }
 
+.transition span {
+  width: 10vw;
+  height: 130vh;
+  background-color: #bf0000;
+  position: fixed;
+  top: 100vh;
+  z-index: 1;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -5,7 +5,6 @@ function App(props) {
   return (
     <div className="App">
       <Intro />
-      {/* <MainContent /> */}
     </div>
   );
 }

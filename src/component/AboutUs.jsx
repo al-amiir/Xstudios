@@ -1,10 +1,18 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
+import { animateTransition } from "../globalFunctions/globalAnimation";
 const AboutUs = () => {
   let text1 = "Ostudios, is a Creative Advertising agency located in Egypt.";
   let condition = true;
 
   useEffect(() => {
+    setTimeout(() => {
+      animateTransition(".transition span", "reverse");
+    }, 4000);
+
+    window.addEventListener("load", () => {
+      // animateTransition(".transition span", "normal");
+    });
     window.addEventListener("scroll", () => {
       if (condition && window.scrollY >= 400) {
         condition = false;
