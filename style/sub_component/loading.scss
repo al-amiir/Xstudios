@@ -1,0 +1,20 @@
+.loading {
+  &_background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    top: 0vh;
+    opacity: 0;
+  }
+  span {
+    width: 10vw;
+    height: 130vh;
+    background-color: #bf0000;
+    position: fixed;
+    top: 100vh;
+    z-index: 1;
+    border: 1px solid black;
+  }
+}

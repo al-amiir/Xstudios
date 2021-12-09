@@ -32,7 +32,17 @@ export function animateLine(className, direction) {
   });
 }
 
-export function animateTransition(className, direction) {
+export function animateLoadingBackground(direction) {
+  anime({
+    targets: ".loading_background",
+    // translateY: ["0vh", "-100vh"],
+    opacity: [0, 1],
+    direction: `${direction}`,
+    easing: "linear",
+    duration: 100,
+  });
+}
+export function animateLoading(className, direction) {
   anime({
     targets: `${className}`,
     translateY: ["0vh", "-100vh"],

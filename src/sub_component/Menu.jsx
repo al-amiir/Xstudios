@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import anime from "animejs/lib/anime.es.js";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { animateWord, animateMenu, animateLine, animateTransition } from "../globalFunctions/globalAnimation";
+import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
 
 const Menu = () => {
   let word1 = "Home";
@@ -21,7 +20,6 @@ const Menu = () => {
     animateLine(".menu_button-line", "reverse");
     setTimeout(() => {
       animateMenu(".menu", "reverse");
-      animateTransition(".transition span", "normal");
     }, 1000);
   }
   return (

@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
-import Intro from "./component/Intro";
+import React from "react";
 
-function App(props) {
-  return (
-    <div className="App">
-      <Intro />
-    </div>
-  );
-}
+const App = () => {
+  return <div></div>;
+};
 
 export default App;

@@ -274,7 +274,16 @@ iframe {
   margin: 10px 0px;
 }
 
-.transition span {
+.loading_background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 1;
+  top: 0vh;
+  opacity: 0;
+}
+.loading span {
   width: 10vw;
   height: 130vh;
   background-color: #bf0000;

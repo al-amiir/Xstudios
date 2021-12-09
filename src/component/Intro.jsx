@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 import ink from "../material/ink.mp4";
-// import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
+import { animateLoading, animateLoadingBackground } from "../globalFunctions/globalAnimation";
+
 const Intro = () => {
   function handleIntroButton() {
     // animateMenu(".menu", "normal");
@@ -69,6 +70,16 @@ const Intro = () => {
         },
       });
     }, 800);
+  }, []);
+  useEffect(() => {
+    return () => {
+      animateLoadingBackground("normal");
+      animateLoading(".loading span", "normal");
+      setTimeout(() => {
+        animateLoadingBackground("reverse");
+        animateLoading(".loading span", "reverse");
+      }, 1000);
+    };
   }, []);
   return (
     <div className="intro">
