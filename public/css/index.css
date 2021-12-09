@@ -114,6 +114,7 @@ $breakpoint arguement choices:
 }
 .intro_button {
   position: fixed;
+  z-index: 1;
   cursor: pointer;
   bottom: 10px;
   left: 50%;
@@ -156,23 +157,23 @@ $breakpoint arguement choices:
 }
 
 .menu {
+  position: fixed;
+  top: 100vw;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: #0000009c;
-  position: fixed;
-  top: 100vw;
   backdrop-filter: blur(5px);
 }
 .menu_button {
   position: relative;
   background-color: transparent;
   overflow: hidden;
-  color: wheat;
   display: flex;
   border: none;
   margin-left: 30px;
 }
-.menu_button p {
+.menu_button span {
   margin-right: 17px;
   font-size: 5rem;
   color: #ffa600;
@@ -194,6 +195,10 @@ $breakpoint arguement choices:
   color: red;
   font-size: 4rem;
   font-weight: 800;
+}
+
+.activeLink span {
+  color: red;
 }
 
 .aboutUs {

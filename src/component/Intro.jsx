@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 import ink from "../material/ink.mp4";
-import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
+// import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
 const Intro = () => {
   function handleIntroButton() {
-    animateMenu(".menu", "normal");
-    setTimeout(() => {
-      animateWord(".menu_button-word-1", "normal");
-      animateWord(".menu_button-word-2", "normal");
-      animateWord(".menu_button-word-3", "normal");
-      animateWord(".menu_button-word-4", "normal");
-      animateWord(".menu_button-word-5", "normal");
-      animateWord(".menu_button-word-6", "normal");
-      animateLine(".menu_button-line", "normal");
-    }, 1000);
+    // animateMenu(".menu", "normal");
+    // setTimeout(() => {
+    //   animateWord(".menu_button-word-1", "normal");
+    //   animateWord(".menu_button-word-2", "normal");
+    //   animateWord(".menu_button-word-3", "normal");
+    //   animateWord(".menu_button-word-4", "normal");
+    //   animateWord(".menu_button-word-5", "normal");
+    //   animateWord(".menu_button-word-6", "normal");
+    //   animateLine(".menu_button-line", "normal");
+    // }, 1000);
     // anime({
     //   targets: ".word-2",
     //   translateX: -400,
@@ -93,11 +93,11 @@ const Intro = () => {
         <span className="word-3">to</span>
         <span className="word-3">live</span>
       </div>
-      <button className="intro_button" onClick={handleIntroButton}>
+      {/* <button className="intro_button" onClick={handleIntroButton}>
         <span className="intro_button-cover">
           <span className="intro_button-line"> </span>
         </span>
-      </button>
+      </button> */}
     </div>
   );
 };

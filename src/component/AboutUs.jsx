@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
-
 const AboutUs = () => {
   let text1 = "Ostudios, is a Creative Advertising agency located in Egypt.";
   let condition = true;
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (condition && window.scrollY >= 400) {
@@ -49,6 +49,7 @@ const AboutUs = () => {
         </div>
         <iframe src="https://my.spline.design/pyramids-80d7779b36e98a57256fd5ac0ed9a0bd/" frameBorder="0"></iframe>
       </section>
+      {/* <Menu /> */}
     </div>
   );
 };

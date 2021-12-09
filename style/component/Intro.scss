@@ -63,6 +63,7 @@
   }
   &_button {
     position: fixed;
+    z-index: 1;
     cursor: pointer;
     // position: absolute;
     bottom: 10px;
