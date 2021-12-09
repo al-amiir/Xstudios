@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
+import { TiTimes } from "react-icons/ti";
 
 const Menu = () => {
   let word1 = "Home";
@@ -79,7 +80,7 @@ const Menu = () => {
       <span className="menu_link-line"></span>
 
       <button onClick={handleCloseButton} className="menu_link menu_link-close">
-        <i className="far fa-times-circle"></i>
+        <TiTimes />
       </button>
     </div>
   );
