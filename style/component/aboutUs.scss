@@ -1,15 +1,7 @@
 .aboutUs {
   color: wheat;
   &_text {
-    // display: none;
-    top: 0;
     &-header {
-      // @supports (-webkit-text-stroke: 1px wheat) {
-      //   & {
-      //     -webkit-text-stroke: 2.5px #ffa600;
-      //     -webkit-text-fill-color: black;
-      //   }
-      // }
       color: red;
       font-weight: 600;
       font-size: 5rem;
@@ -37,7 +29,6 @@
   }
 }
 iframe {
-  // position: absolute;
   width: 100vw;
   height: 100vh;
 }

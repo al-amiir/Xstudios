@@ -4,48 +4,6 @@ import ink from "../material/ink.mp4";
 import { animateLoading, animateLoadingBackground } from "../globalFunctions/globalAnimation";
 
 const Intro = () => {
-  function handleIntroButton() {
-    // animateMenu(".menu", "normal");
-    // setTimeout(() => {
-    //   animateWord(".menu_button-word-1", "normal");
-    //   animateWord(".menu_button-word-2", "normal");
-    //   animateWord(".menu_button-word-3", "normal");
-    //   animateWord(".menu_button-word-4", "normal");
-    //   animateWord(".menu_button-word-5", "normal");
-    //   animateWord(".menu_button-word-6", "normal");
-    //   animateLine(".menu_button-line", "normal");
-    // }, 1000);
-    // anime({
-    //   targets: ".word-2",
-    //   translateX: -400,
-    //   translateY: -20,
-    //   duration: 2000,
-    //   easing: "easeOutQuart",
-    // });
-    // anime({
-    //   targets: ".word-1",
-    //   translateX: 400,
-    //   translateY: 20,
-    //   duration: 2000,
-    //   easing: "easeOutQuart",
-    // });
-    // anime({
-    //   targets: ".word-3",
-    //   translateY: [0, 20],
-    //   delay: function (el, i, l) {
-    //     return i * 100;
-    //   },
-    //   begin: () => {
-    //     anime({
-    //       targets: ".mainContent",
-    //       translateY: "-100%",
-    //       delay: 500,
-    //       easing: "easeOutQuart",
-    //     });
-    //   },
-    // });
-  }
-
   useEffect(() => {
     anime({
       targets: ".intro_first",

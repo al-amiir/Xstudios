@@ -1,12 +1,10 @@
 .services {
-  //   color: wheat;
   &_text {
-    visibility: hidden;
     &-header {
       margin-left: 10px;
       @supports (-webkit-text-stroke: 1px wheat) {
         & {
-          -webkit-text-stroke: 2.5px #ffa600;
+          -webkit-text-stroke: 2.5px red;
           -webkit-text-fill-color: black;
           font-size: 5rem;
         }
@@ -24,9 +22,10 @@
       display: flex;
       flex-direction: column;
       &-singleWord {
-        color: red;
+        color: #ffa600;
         font-size: 3rem;
         margin: 10px 0px;
+        font-weight: 600;
       }
     }
   }

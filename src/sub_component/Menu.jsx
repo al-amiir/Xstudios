@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { animateWord, animateMenu, animateLine } from "../globalFunctions/globalAnimation";
 
 const Menu = () => {
@@ -25,49 +25,61 @@ const Menu = () => {
   return (
     <div className="menu">
       <NavLink onClick={handleCloseButton} to="/" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word1.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-1">{w}</span>
+        {word1.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-1">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <NavLink onClick={handleCloseButton} to="/about-us" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word2.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-2">{w}</span>
+        {word2.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-2">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <NavLink onClick={handleCloseButton} to="/services" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word3.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-3">{w}</span>
+        {word3.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-3">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <NavLink onClick={handleCloseButton} to="/projects" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word4.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-4">{w}</span>
+        {word4.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-4">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <NavLink onClick={handleCloseButton} to="/partners" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word5.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-5">{w}</span>
+        {word5.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-5">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <NavLink onClick={handleCloseButton} to="/contact-us" className={({ isActive }) => (isActive ? " menu_link activeLink" : "menu_link")}>
-        {word6.split("").map((w) => (
-          <span className="menu_link-word menu_link-word-6">{w}</span>
+        {word6.split("").map((w, i) => (
+          <span key={i} className="menu_link-word menu_link-word-6">
+            {w}
+          </span>
         ))}
       </NavLink>
       <span className="menu_link-line"></span>
 
       <button onClick={handleCloseButton} className="menu_link menu_link-close">
-        <i class="far fa-times-circle"></i>
+        <i className="far fa-times-circle"></i>
       </button>
     </div>
   );
