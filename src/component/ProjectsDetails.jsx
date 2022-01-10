@@ -25,7 +25,7 @@ const ProjectsDetails = () => {
               <img src={website2} alt="" />
               <p>project 2</p>
             </li>{" "}
-            <li>
+            {/* <li>
               <img src={website3} alt="" />
               <p>project 3</p>
             </li>{" "}
@@ -36,7 +36,7 @@ const ProjectsDetails = () => {
             <li>
               <img src={website5} alt="" />
               <p>project 5</p>
-            </li>{" "}
+            </li>{" "} */}
           </ul>
         </div>
       </div>

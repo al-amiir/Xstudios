@@ -1,11 +1,17 @@
 .projects {
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   margin-top: 50px;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-gap: 60px;
+  justify-content: center;
+  @include respond(1000) {
+    grid-template-columns: repeat(2, min-content);
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(1, min-content);
+  }
   .singleProject {
     position: relative;
     width: 300px;
