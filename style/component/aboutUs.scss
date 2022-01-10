@@ -1,5 +1,6 @@
 .aboutUs {
   color: wheat;
+  padding-bottom: 60px;
   &_text {
     &-header {
       color: red;
@@ -19,16 +20,18 @@
       flex-wrap: wrap;
       margin-left: 50px;
       overflow: hidden;
+      @include respond(tab-port) {
+        width: auto;
+      }
       &-singleWord {
         font-size: 3rem;
         margin: 5px;
         color: #ffa600;
         font-weight: 600;
+        @include respond(phone) {
+          font-size: 2rem;
+        }
       }
     }
   }
-}
-iframe {
-  width: 100vw;
-  height: 100vh;
 }

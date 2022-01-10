@@ -1,0 +1,21 @@
+.partners {
+  &-content {
+    margin-top: 15px;
+    margin-left: 71px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 6rem);
+    grid-gap: 18px;
+    justify-items: center;
+    align-items: end;
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 6rem);
+    }
+    img {
+      width: 100px;
+      height: 70px;
+      border: 5px solid #969696;
+      border-radius: 4px;
+    }
+  }
+}

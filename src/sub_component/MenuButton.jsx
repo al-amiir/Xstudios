@@ -16,7 +16,8 @@ const MenuButton = () => {
   return (
     <button className="menu_button" onClick={handleIntroButton}>
       <span className="menu_button-cover">
-        <span className="menu_button-line"> </span>
+        <i class="fas fa-bars"></i>
+        {/* <span className="menu_button-line"> </span> */}
       </span>
     </button>
   );

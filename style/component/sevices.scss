@@ -17,15 +17,39 @@
       }
     }
     &-words {
-      margin-left: 50px;
+      margin-top: 20px;
+      margin-bottom: 60px;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      &-singleWord {
-        color: #ffa600;
-        font-size: 3rem;
-        margin: 10px 0px;
+      display: grid;
+      grid-template-columns: repeat(3, min-content);
+      grid-gap: 29px;
+      justify-content: center;
+      @include respond(1000) {
+        grid-template-columns: repeat(2, min-content);
+      }
+      @include respond(700) {
+        grid-template-columns: repeat(1, min-content);
+      }
+
+      div {
+        color: #000000;
         font-weight: 600;
+        width: 300px;
+        background-color: #dd890e;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        img {
+          width: 100px;
+          filter: drop-shadow(2px 4px 6px black);
+        }
+        p {
+          font-size: 3rem;
+        }
+        span {
+          font-size: 1.3rem;
+        }
       }
     }
   }

@@ -14,7 +14,18 @@ const ContactUs = () => {
       }, 1000);
     };
   }, []);
-  return <div style={{ color: "#ffa600", fontSize: "3rem", fontWeight: 600 }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam repellendus et illo cumque incidunt cupiditate, id nobis praesentium tempore reprehenderit. Fugiat saepe officiis ipsum nulla molestiae minima odit distinctio!</div>;
+  return (
+    <div>
+      <p className="services_text-header">contact us</p>
+      <span className="services_text-header-line"></span>
+      <ul style={{ color: "#f7a630", fontSize: "3rem", fontWeight: 600, margin: "19px", listStyle: "none" }}>
+        <li>Phone: 00000000</li>
+        <li>Adress: -----------</li>
+        <li>email: ---------</li>
+        <li>Behance: ----------</li>
+      </ul>
+    </div>
+  );
 };
 
 export default ContactUs;

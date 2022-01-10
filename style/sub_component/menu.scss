@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  top: 100vw;
+  top: 100vh;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -16,9 +16,13 @@
     span {
       margin-right: 17px;
       font-size: 5rem;
+      font-weight: 600;
       color: #ffa600;
       font-family: "Genos", sans-serif;
       transform: translateY(70px);
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
     &-line {
       width: 0%;
@@ -52,7 +56,9 @@
       width: 10px;
       height: 10px;
       border: 4px double #ffa600;
-      background-color: transparent;
+      color: #ffa600;
+      font-size: 1.5rem;
+      background-color: #00000096;
       padding: 20px 16px;
       display: flex;
       justify-content: center;

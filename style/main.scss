@@ -1,9 +1,12 @@
 @import "./base/typography.scss";
 @import "./base/base.scss";
+@import "./base/mixins.scss";
 
 @import "./component/Intro.scss";
 @import "./component/aboutUs.scss";
 @import "./component/sevices.scss";
+@import "./component/projects.scss";
+@import "./component/partners.scss";
 
 @import "./sub_component/menu.scss";
 @import "./sub_component/loading.scss";

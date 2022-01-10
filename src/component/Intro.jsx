@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import anime from "animejs/lib/anime.es.js";
 import ink from "../material/ink.mp4";
 import { animateLoading, animateLoadingBackground } from "../globalFunctions/globalAnimation";
 
 const Intro = () => {
+  const [displayCondition, setDisplayCondition] = useState("none");
+  setTimeout(() => {
+    document.querySelector("video").play();
+    setDisplayCondition("initial");
+  }, 2000);
+
   useEffect(() => {
     anime({
       targets: ".intro_first",
@@ -44,16 +50,16 @@ const Intro = () => {
   return (
     <div className="intro">
       <div className="video">
-        <video autoPlay muted>
+        <video muted style={{ display: `${displayCondition}` }}>
           <source src={ink} type="video/mp4" />
         </video>
       </div>
       <div className="intro_first">
         <span className="dot"></span>
-        <span className="word-1">OSTUDIOS</span>
+        <span className="word-1">XSTUDIOS</span>
       </div>
       <div className="intro_second">
-        <span className="word-2">OSTUDIOS</span>
+        <span className="word-2">XSTUDIOS</span>
       </div>
       <div className="intro_third">
         <span className="word-3">where</span>

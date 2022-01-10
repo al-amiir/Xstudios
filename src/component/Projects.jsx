@@ -1,5 +1,13 @@
 import React, { useEffect } from "react";
-import { animateLoading, animateLoadingBackground } from "../globalFunctions/globalAnimation";
+import { animateLoading, animateLoadingBackground, animateLayers } from "../globalFunctions/globalAnimation";
+
+import brandImage from "../material/images/brand.jpg";
+import websiteImage from "../material/images/website.jpg";
+import socialImage from "../material/images/social.jpg";
+import animationImage from "../material/images/animation.jpg";
+import videoGrapghyImage from "../material/images/videoGrahpy.jpg";
+import productionImage from "../material/images/production.jpg";
+import ProjectsDetails from "./ProjectsDetails";
 
 const Projects = () => {
   useEffect(() => {
@@ -14,7 +22,63 @@ const Projects = () => {
       }, 1000);
     };
   }, []);
-  return <div style={{ color: "#ffa600", fontSize: "3rem", fontWeight: 600 }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magnam repellendus et illo cumque incidunt cupiditate, id nobis praesentium tempore reprehenderit. Fugiat saepe officiis ipsum nulla molestiae minima odit distinctio!</div>;
+  return (
+    <>
+      <p className="services_text-header">our projects</p>
+      <span className="services_text-header-line"></span>
+      <div className="projects">
+        <div className="singleProject" onClick={() => animateLayers(".projectsDetails", "normal")}>
+          <img src={websiteImage} alt="" />
+          <div>
+            <span>websites</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div className="singleProject">
+          <img src={brandImage} alt="" />
+          <div>
+            <span>branding</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div className="singleProject">
+          <img src={socialImage} alt="" />
+          <div>
+            <span>social media</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div className="singleProject">
+          <img src={animationImage} alt="" />
+          <div>
+            <span>animation</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div className="singleProject">
+          <img src={videoGrapghyImage} alt="" />
+          <div>
+            <span>videoGraphy</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div className="singleProject">
+          <img src={productionImage} alt="" />
+          <div>
+            <span>production</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <ProjectsDetails />
+      </div>
+    </>
+  );
 };
 
 export default Projects;
