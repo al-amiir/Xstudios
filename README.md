@@ -1,6 +1,6 @@
 ### `Ostudios Agency`
 
-Recreate Ostudios Agency's Website
+Xstudios Agency's Website
 
 ### `Created Through:`
 
